@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jaria2.jaria2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jaria2/build/libs/jaria2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

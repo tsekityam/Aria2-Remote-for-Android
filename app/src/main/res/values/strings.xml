@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   Copyright 2016 Tse Kit Yam
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+<resources>
+
+    <string name="app_name">Aria2 Remote</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="KEY_GID">KEY_GID</string>
+    <string name="KEY_STATUS">KEY_STATUS</string>
+    <string name="KEY_URL">KEY_URL</string>
+    <string name="KEY_SECRET">KEY_SECRET</string>
+    <string name="KEY_LIST_TYPE_INDEX">KEY_LIST_TYPE</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="action_sign_in_short">Sign In</string>
+    <string name="error_url_required">Url cannot be empty</string>
+    <string name="add_url_tittle">Add Download By URI</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_occurred">Error occurred</string>
+    <string name="suffix_active">" - Active"</string>
+    <string name="suffix_waiting">" - Waiting"</string>
+    <string name="suffix_stopped">" - Stopped"</string>
+    <string name="gid_unpausing">GID#%s is unpausing</string>
+    <string name="gid_pausing">GID#%s is pausing</string>
+    <string name="gid_added">GID#%s is added</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_credentials">Login Credentials</string>
+    <string name="secret_int">Secret (Optional)</string>
+    <string name="url_hint">Url</string>
+    <string name="active">Active</string>
+    <string name="waiting">Waiting</string>
+    <string name="stopped">Stopped</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+
+</resources>
