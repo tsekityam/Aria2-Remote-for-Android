@@ -166,7 +166,9 @@ public class DownloadListFragment extends Fragment implements
 
     @Override
     public void onAria2ListItemMoved(Aria2.ListType type, int oldPosition, int newPosition) {
-        mAdapter.notifyItemMoved(oldPosition, newPosition);
+        if (type == mType) {
+            mAdapter.notifyItemMoved(oldPosition, newPosition);
+        }
     }
 
     @Override
