@@ -18,6 +18,8 @@ package com.kytse.aria2remote;
 import android.content.DialogInterface;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -144,30 +146,54 @@ public class DownloadListFragment extends Fragment implements
     }
 
     @Override
-    public void onAria2ListItemChanged(Aria2.ListType type, int position) {
+    public void onAria2ListItemChanged(Aria2.ListType type, final int position) {
         if (type == mType) {
-            mAdapter.notifyItemChanged(position);
+            Handler handler = new Handler(Looper.getMainLooper());
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    mAdapter.notifyItemChanged(position);
+                }
+            });
         }
     }
 
     @Override
-    public void onAria2ListItemInserted(Aria2.ListType type, int position) {
+    public void onAria2ListItemInserted(Aria2.ListType type, final int position) {
         if (type == mType) {
-            mAdapter.notifyItemInserted(position);
+            Handler handler = new Handler(Looper.getMainLooper());
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    mAdapter.notifyItemInserted(position);
+                }
+            });
         }
     }
 
     @Override
-    public void onAria2ListItemRemoved(Aria2.ListType type, int position) {
+    public void onAria2ListItemRemoved(Aria2.ListType type, final int position) {
         if (type == mType) {
-            mAdapter.notifyItemRemoved(position);
+            Handler handler = new Handler(Looper.getMainLooper());
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    mAdapter.notifyItemRemoved(position);
+                }
+            });
         }
     }
 
     @Override
-    public void onAria2ListItemMoved(Aria2.ListType type, int oldPosition, int newPosition) {
+    public void onAria2ListItemMoved(Aria2.ListType type, final int oldPosition, final int newPosition) {
         if (type == mType) {
-            mAdapter.notifyItemMoved(oldPosition, newPosition);
+            Handler handler = new Handler(Looper.getMainLooper());
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    mAdapter.notifyItemMoved(oldPosition, newPosition);
+                }
+            });
         }
     }
 
